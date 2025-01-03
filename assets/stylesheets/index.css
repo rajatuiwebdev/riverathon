@@ -25,7 +25,7 @@ body {
     padding-top: 10px;
 }
 
-.landPage .paragraphTextBtn .paragraphBtn button:nth-child(1) {
+#btn-1:nth-child(1) {
     border: 2px solid #3EB2E4;
     background-color: transparent;
     color: white;
@@ -36,11 +36,11 @@ body {
     margin-right: 50px;
 }
 
-.landPage .paragraphTextBtn .paragraphBtn button:nth-child(1):hover {
+#btn-1:nth-child(1):hover {
     background-color: #3EB2E4;
 }
 
-.landPage .paragraphTextBtn .paragraphBtn button:nth-child(2) {
+#btn-2 {
     border: 2px solid #3EB2E4;
     background-color: #3EB2E4;
     color: white;
@@ -50,7 +50,7 @@ body {
     transition: 0.2s all ease;
 }
 
-.landPage .paragraphTextBtn .paragraphBtn button:nth-child(2):hover {
+#btn-2:hover {
     background-color: transparent;
 }
 
