@@ -310,26 +310,13 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     color: #002449;
+    
     text-align: center;
 }
 .themes h6{
     padding-top: 10px;
     padding-bottom: 30px;
-    font-size: 20px;
-}
-.themes {
-    text-align: center;
-}
-
-.themes h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.themes h6 {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .owl-carousel .item {
