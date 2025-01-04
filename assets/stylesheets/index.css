@@ -375,8 +375,16 @@ footer {
     background-color: black;
     border-bottom: 2px solid white;
 }
+.marq{
+    display: flex;
+    width: 100%;
+}
+.marquee .marq img{
+    width: 100px;
+}
 .marquee p{
     padding-top: 15px;
     font-size: 20px;
+    font-weight: bold;
     color: white;
 }
