@@ -39,25 +39,9 @@
         margin-right: 30px;
     }
 }
-@media screen and (max-width : 1430px){
-    .nav-item:nth-child(6){
-        display: none;
-    }
-}
-@media screen and (max-width : 1350px){
-    .nav-item:nth-child(3){
-        display: none;
-    }
-}
-@media screen and (max-width : 1150px){
-    .nav-item:nth-child(5){
-        display: none;
-    }
-}
+
 @media screen and (max-width : 999px){
-    .nav-item:nth-child(5),.nav-item:nth-child(3),.nav-item:nth-child(6){
-        display: block;
-    }
+
     .nav-item{
         margin-left: 0px;
         margin-top: 10px;
