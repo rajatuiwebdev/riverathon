@@ -294,3 +294,80 @@ footer {
     background-color: #555;
     /* Add a dark-grey background on hover */
 }
+
+/* Themes */
+.themes{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: white;
+    background-image: url(../images/backgroundImage-2.png);
+}
+
+.themes h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #002449;
+    text-align: center;
+}
+.themes h6{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+.themes {
+    text-align: center;
+}
+
+.themes h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.themes h6 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.themeBox {
+    width: 100%;
+    max-width: 500px; /* For responsive scaling */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers child elements horizontally */
+    background: #f9f9f9; /* Optional for better visibility */
+    padding: 20px;
+    border-radius: 10px; /* Optional for rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for shadow effect */
+    height: 280px;
+
+}
+
+.themeBox img {
+    width: 100px !important;
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 15px; /* Adds spacing below the image */
+}
+
+.themeBox h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.themeBox p {
+    font-size: 16px;
+    color: #555; /* Slightly darker text for contrast */
+    margin: 0;
+    line-height: 1.5;
+}

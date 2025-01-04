@@ -78,11 +78,11 @@
 }
 
 .container-custom.left .date {
-    right: -75px;
+    right: -95px;
 }
 
 .container-custom.right .date {
-    left: -75px;
+    left: -95px;
 }
 
 .container-custom .icon {
