@@ -371,3 +371,12 @@ footer {
     margin: 0;
     line-height: 1.5;
 }
+.marquee{
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+.marquee p{
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+}
