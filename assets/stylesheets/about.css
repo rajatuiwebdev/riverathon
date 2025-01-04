@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .about-section{
     margin-top: 50px;
+    font-family: "Inter", sans-serif;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
 .about-section .text{
     padding-left: 100px;
+}
+.about-section .text h1{
+    font-weight: 600;
+
 }
 @media screen and (max-width: 999px){
     .about-section{
