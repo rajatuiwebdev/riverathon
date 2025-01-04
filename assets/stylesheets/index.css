@@ -2,6 +2,7 @@ body {
     background-image: url(../images/backgroundImage.png);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
 }
 
 /* Landing Page Style */
@@ -13,6 +14,7 @@ body {
 
 .landPage .titleText h1 {
     font-size: 80px;
+    padding-top: 20px;
     text-transform: uppercase;
 }
 
