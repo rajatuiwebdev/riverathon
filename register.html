@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverathon</title>
+    <script src="https://kit.fontawesome.com/03e9286989.js" crossorigin="anonymous"></script>
+
+    <!-- Local Stylesheet Imports -->
+    <link rel="stylesheet" href="assets/stylesheets/navbar-dark.css">
+    <link rel="stylesheet" href="assets/stylesheets/footer.css">
+
+    <!-- Internet Stylesheet Imports -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/mainLogo.png" width="200px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#what">About Riverathon</a></li>
+                            <hr class="dropdown-divider">
+
+                            <li><a class="dropdown-item" href="about/about-nmgc.html">About NMGC</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="about/about-amity.html">About Amity University</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Workshop</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Link 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="problem-statements.html">Problem Statements</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Important Links
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="important-dates.html">Timeline</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Rules &
+                                    Guidelines</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">FAQs</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><button id="registerNavBtn">Register Now!</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Registration Form</h2>
+        <p class="text-center">*Only team leaders should fill the form.</p>
+
+        <form id="registrationForm" class="needs-validation" novalidate>
+            <!-- Amity Student Check -->
+            <div class="mb-3">
+                <label class="form-label">Are you an Amity Student?</label>
+                <select class="form-select" id="amityStudent" onchange="toggleStudentFields()" required>
+                    <option value="" selected disabled>Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+            </div>
+        
+            <!-- Amity Student Fields -->
+            <div id="amityFields" style="display: none;">
+                <div class="mb-3">
+                    <label class="form-label">Enrollment Number</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your enrollment number.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Department</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your department.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Batch</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your batch.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Section</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your section.</div>
+                </div>
+            </div>
+        
+            <!-- Non-Amity Student Fields -->
+            <div id="nonAmityFields" style="display: none;">
+                <div class="mb-3">
+                    <label class="form-label">College Name</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your college name.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Proof of College ID Card of all Team Members (Drive Link)</label>
+                    <input type="url" class="form-control" required>
+                    <div class="invalid-feedback">Please provide a valid drive link.</div>
+                </div>
+            </div>
+        
+            <!-- Problem Statement and Theme Dropdown -->
+            <div class="mb-3">
+                <label class="form-label">Problem Statement and Theme</label>
+                <select class="form-select" id="problemTheme" required>
+                    <option value="" selected disabled>Select Problem Statement and Theme</option>
+                    <option value="problem1|theme1">Problem 1 - Theme 1</option>
+                    <option value="problem2|theme2">Problem 2 - Theme 2</option>
+                    <option value="problem3|theme3">Problem 3 - Theme 3</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <div class="invalid-feedback">Please select a problem statement and theme.</div>
+            </div>
+        
+            <!-- Team Details -->
+            <div class="mb-3">
+                <label class="form-label">Number of Team Members</label>
+                <select class="form-select" id="teamSize" onchange="toggleTeamMembers()" required>
+                    <option value="1" selected disabled>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <div class="invalid-feedback">Please select the number of team members.</div>
+            </div>
+        
+            <div id="teamMembers">
+                <!-- Team Lead -->
+                <h5>Team Lead Details</h5>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter the team lead's name.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contact Number</label>
+                    <input type="tel" class="form-control" pattern="[0-9]{10}" required>
+                    <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+        
+                <!-- Additional Team Members -->
+                <div id="additionalMembers"></div>
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+    </div>
+
+    <footer class="text-center mt-5">
+        <p><strong>© 2025 Amity University. All rights reserved</strong></p>
+    </footer>
+
+    <!-- JavaScript Imports -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Toggle Amity/Non-Amity Fields
+        function toggleStudentFields() {
+            const amityFields = document.getElementById('amityFields');
+            const nonAmityFields = document.getElementById('nonAmityFields');
+            const value = document.getElementById('amityStudent').value;
+
+            amityFields.style.display = value === 'yes' ? 'block' : 'none';
+            nonAmityFields.style.display = value === 'no' ? 'block' : 'none';
+        }
+
+        // Add Additional Team Member Fields
+        function toggleTeamMembers() {
+            const additionalMembers = document.getElementById('additionalMembers');
+            const teamSize = parseInt(document.getElementById('teamSize').value);
+            additionalMembers.innerHTML = '';
+
+            for (let i = 2; i <= teamSize; i++) {
+                additionalMembers.innerHTML += `
+                    <h5>Team Member ${i} Details</h5>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">Please enter team member ${i}'s name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" pattern="[0-9]{10}" required>
+                        <div class="invalid-feedback">Please enter a valid 10-digit contact number for team member ${i}.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                        <div class="invalid-feedback">Please enter a valid email address for team member ${i}.</div>
+                    </div>
+                `;
+            }
+        }
+
+        // Form Validation
+        (function () {
+            'use strict'
+            // Get all forms that require validation
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over each form and prevent submission if invalid
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })();
+    </script>
+</body>
+
+</html>
