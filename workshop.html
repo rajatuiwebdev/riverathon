@@ -14,12 +14,144 @@
     <!-- Internet Stylesheet Imports -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .navbar-toggler {
+            border-color: white !important;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            background: linear-gradient(to bottom, #d9ffff, #a2ffff);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1e90ff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-section .register-btn {
+            background-color: #000;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 12px 35px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero-section .register-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .hero-section .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero-section .video-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero-section .video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(8px); /* Blur effect for the background video */
+        }
+
+        .hero-section .container-info {
+            z-index: 2;
+        }
+
+        /* Gradient button for event date and location */
+        .event-info {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6f00, #ff5722);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        /* Schedule Section */
+        .schedule-section {
+            margin-top: 50px;
+            padding: 40px 0;
+            background-color: #f8f9fa;
+        }
+
+        .schedule-section h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .schedule-section .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule-section .schedule-table th,
+        .schedule-section .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .schedule-section .schedule-table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Second Video Section */
+        .second-video-section {
+            position: relative;
+            padding: 60px 0;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .second-video-section video {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
-<style>
-    .navbar-toggler {
-        border-color: white !important;
-    }
-</style>
 
 <body>
     <!-- Navigation Bar -->
@@ -46,11 +178,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.html#what">About Riverathon</a></li>
                             <hr class="dropdown-divider">
-
                             <li><a class="dropdown-item" href="about/about-nmgc.html">About NMGC</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="about/about-amity.html">About Amity University</a></li>
                         </ul>
                     </li>
@@ -63,9 +192,7 @@
                             <li><a class="dropdown-item" href="#"
                                     onclick="alert('Page is currently under development. Coming soon.')">Workshop</a>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#"
                                     onclick="alert('Page is currently under development. Coming soon.')">Link 2</a></li>
                         </ul>
@@ -79,27 +206,16 @@
                             Important Links
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="important-dates.html">Timeline</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
+                            <li><a class="dropdown-item" href="important-dates.html">Timeline</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#"
-                                    onclick="alert('Page is currently under development. Coming soon.')">Rules &
-                                    Guidelines</a></li>
-
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
+                                    onclick="alert('Page is currently under development. Coming soon.')">Rules & Guidelines</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#"
                                     onclick="alert('Page is currently under development. Coming soon.')">FAQs</a></li>
-
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#"
-                                    onclick="alert('Page is currently under development. Coming soon.')">Contact Us</a>
-                            </li>
+                                    onclick="alert('Page is currently under development. Coming soon.')">Contact Us</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -109,107 +225,72 @@
             </div>
         </div>
     </nav>
-    <div class="container shadow-none  mt-0 pt-0 p-0" >
-        <div class="container shadow-none rounded-0 p-5 m-0" style="background: linear-gradient(to bottom, #d9ffff, #a2ffff);">
-          <!-- Hero Section -->
-          <div class="container text-center py-5 bg-light  rounded" style="box-shadow: none;">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="video-wrapper">
+            <video class="rounded" src="./assets/videos/Teaser_2-edited.MP4" title="Workshop Intro Video" autoplay muted loop playsinline></video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="container content text-center">
             <h6 class="fw-bold mb-3">National Level Pre-Hackathon Workshop On</h6>
-            <h1 class="fw-bold text-primary">LIDAR TECHNOLOGY FOR RIVER</h1>
-            <h4 class="text-info">REVIVAL, RESTORATION, REJUVENATION</h4>
-            <div class="d-inline-block bg-primary text-white rounded-pill px-4 py-2 mt-4">
-              <i class="bi bi-calendar-event"></i> Jan XX, 2025
+            <h1 class="fw-bold">LIDAR TECHNOLOGY FOR RIVER</h1>
+            <h4>REVIVAL, RESTORATION, REJUVENATION</h4>
+
+            <!-- Event Info -->
+            <div class="event-info">
+                <i class="bi bi-calendar-event"></i> Jan XX, 2025
             </div>
-            <div class="d-inline-block bg-primary text-white rounded-pill px-4 py-2 mt-4 ms-3">
-              <i class="bi bi-geo-alt"></i> Amity University, Noida
-            </div>
-          </div>
-          
-          <!-- Register Button -->
-          <div class="text-center mt-4">
-            <button class="btn bg-black text-white px-4 py-2 rounded-pill border border-2 border-primary ">Register Now</button>
-          </div>
-          
-          <!-- About Section -->
-          <div class="mt-5">
-            <h4 class="fw-bold text-center">About the Workshop</h4>
-            <p class="mt-3 text-center" style="text-align: justify;">
-                LiDAR technology is transforming river and riparian monitoring by 
-                providing detailed data for studying morphology, erosion hotspots, 
-                vegetation analysis, and floodplain dynamics. It aids in disaster 
-                preparedness, predictive modeling, digital twin development, and 
-                sustainable water resource management. 
-            </p>
-            <p class="text-center" style="text-align: justify;">
-                This workshop delves into LiDAR’s practical applications for solving 
-                real-world river challenges, offering insights into environmental and 
-                climate management solutions.
-            </p>
-            
-          </div>
-        
-        </div>
-        
-        <div class="container shadow-none mt-0 p-0 rounded-0" style="background: linear-gradient(to bottom, #a2ffff, black);">
-            <div class="shadow-none  text-center py-5">
-                <h2 class="fw-bold mb-4">Welcome to Our Workshop</h2>
-                <div class="ratio ratio-16x9" style="background: inherit;">
-                    <video class="rounded" src="./assets/videos/Teaser_2-edited.MP4" title="Workshop Intro Video" autoplay muted loop controls></video>
-                </div>
-                <p class="mt-4 text-white ">
-                    Join us for this exciting workshop and prepare yourself for the 
-                    upcoming Riverathon  
-                </p>
+            <div class="event-info ms-3">
+                <i class="bi bi-geo-alt"></i> Amity University, Noida
             </div>
 
-            <div class="text-center my-4">
-                <h2 class="fw-bold text-white">Schedule</h2>
-              </div>
-              <div class="d-flex align-items-start mt-0 pt-0 gap-4 justify-content-center pb-4 flex-wrap">
-                <div class=" rounded d-flex flex-column justify-content-between " 
-                     style="background-color: #ffffff; color: #000000; width: 300px; min-height: 400px;">
-                  <h5 class="text-center  p-2 text-white" style="background-color: #598c8c;">Day 1: LiDAR & River Engineering</h5>
-                  <hr class="border-white">
-                  <p class="flex-grow-1 p-2" style="text-align: justify;">
-                    <strong>LiDAR Basics:</strong><br>
-                    Principles, System types (Airborne, Terrestrial, Mobile, Bathymetric), 
-                    data acquisition, and processing.
-                  </p>
-                  <p class="flex-grow-1 p-2" style="text-align: justify;">
-                    <strong>River Engineering:</strong><br>
-                    Fundamentals, challenges, and LiDAR applications for real-time solutions.
-                  </p>
-                </div>
-                <div class=" rounded d-flex flex-column justify-content-between" 
-                     style="background-color:  #ffffff; color: #000000; width: 300px; min-height: 400px;">
-                  <h5 class="text-center  p-2 text-white" style="background-color: #598c8c;">Day 2: LiDAR workflow & Integration</h5>
-                  <hr class="border-white">
-                  <p class="flex-grow-1 p-2" style="text-align: justify;">
-                    <strong>LiDAR Processing:</strong><br>
-                    Tools, point cloud filtering (ground/non-ground), and models (DTM, DSM, CHM).
-                  </p>
-                  <p class="flex-grow-1 p-2" style="text-align: justify;">
-                    <strong>Integration:</strong><br>
-                    LiDAR with drones, GIS, AI; use cases in hydrology, vegetation, infrastructure, 
-                    and climate monitoring.
-                  </p>
-                </div>
-              </div>
-              
+            <!-- Register Button -->
+            <div class="mt-4">
+                <button class="register-btn">Register Now</button>
+            </div>
         </div>
-        
-          
-        
-    </div>
-    
-      
+    </section>
+
+    <!-- Second Video Section (Showcase) -->
+    <section class="second-video-section">
+        <div class="container">
+            <h2 class="fw-bold">Explore Our Workshop</h2>
+            <video class="rounded" src="./assets/videos/Teaser_2-edited.MP4" title="Showcase Video" autoplay loop controls>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <h3>Event Schedule</h3>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Session</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 1</td>
+                    <td>Lidar and River Engineering</td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>Lidar Workflow and Integration</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p><strong>© 2025 Amity University. All rights reserved</strong></p>
+        <!-- Footer Content -->
     </footer>
-</body>
-<!-- JavaScript Imports -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZVP4Jxh5PsnUJevVZpQivFQ+LwMe5nxgZ9Jt8zH+BOl0WPA==" crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverathon</title>
+
+    <!-- Local Stylesheet Imports -->
+    <link rel="stylesheet" href="assets/stylesheets/navbar-dark.css">
+    <link rel="stylesheet" href="assets/stylesheets/footer.css">
+    <link rel="stylesheet" href="assets/stylesheets/problem.css">
+
+    <!-- Internet Stylesheet Imports -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .navbar-toggler {
+        border-color: white !important;
+    }
+</style>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/mainLogoDark.png" width="200px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#what">About Riverathon</a></li>
+                            <hr class="dropdown-divider">
+
+                            <li><a class="dropdown-item" href="about/about-nmgc.html">About NMGC</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="about/about-amity.html">About Amity University</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Workshop</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Link 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#themes">Problem Themes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Important Links
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="important-dates.html">Timeline</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Rules &
+                                    Guidelines</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">FAQs</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="alert('Page is currently under development. Coming soon.')">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html"><button id="registerNavBtn">Register Now!</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container shadow-none  mt-0 pt-0 p-0" >
+        <div class="container shadow-none rounded-0 p-5 m-0" style="background: linear-gradient(to bottom, #d9ffff, #a2ffff);">
+          <!-- Hero Section -->
+          <div class="container text-center py-5 bg-light  rounded" style="box-shadow: none;">
+            <h6 class="fw-bold mb-3">National Level Pre-Hackathon Workshop On</h6>
+            <h1 class="fw-bold text-primary">LIDAR TECHNOLOGY FOR RIVER</h1>
+            <h4 class="text-info">REVIVAL, RESTORATION, REJUVENATION</h4>
+            <div class="d-inline-block bg-primary text-white rounded-pill px-4 py-2 mt-4">
+              <i class="bi bi-calendar-event"></i> Jan XX, 2025
+            </div>
+            <div class="d-inline-block bg-primary text-white rounded-pill px-4 py-2 mt-4 ms-3">
+              <i class="bi bi-geo-alt"></i> Amity University, Noida
+            </div>
+          </div>
+          
+          <!-- Register Button -->
+          <div class="text-center mt-4">
+            <button class="btn bg-black text-white px-4 py-2 rounded-pill border border-2 border-primary ">Register Now</button>
+          </div>
+          
+          <!-- About Section -->
+          <div class="mt-5">
+            <h4 class="fw-bold text-center">About the Workshop</h4>
+            <p class="mt-3 text-center" style="text-align: justify;">
+                LiDAR technology is transforming river and riparian monitoring by 
+                providing detailed data for studying morphology, erosion hotspots, 
+                vegetation analysis, and floodplain dynamics. It aids in disaster 
+                preparedness, predictive modeling, digital twin development, and 
+                sustainable water resource management. 
+            </p>
+            <p class="text-center" style="text-align: justify;">
+                This workshop delves into LiDAR’s practical applications for solving 
+                real-world river challenges, offering insights into environmental and 
+                climate management solutions.
+            </p>
+            
+          </div>
+        
+        </div>
+        
+        <div class="container shadow-none mt-0 p-0 rounded-0" style="background: linear-gradient(to bottom, #a2ffff, black);">
+            <div class="shadow-none  text-center py-5">
+                <h2 class="fw-bold mb-4">Welcome to Our Workshop</h2>
+                <div class="ratio ratio-16x9" style="background: inherit;">
+                    <video class="rounded" src="./assets/videos/Teaser_2-edited.MP4" title="Workshop Intro Video" autoplay muted loop controls></video>
+                </div>
+                <p class="mt-4 text-white ">
+                    Join us for this exciting workshop and prepare yourself for the 
+                    upcoming Riverathon  
+                </p>
+            </div>
+
+            <div class="text-center my-4">
+                <h2 class="fw-bold text-white">Schedule</h2>
+              </div>
+              <div class="d-flex align-items-start mt-0 pt-0 gap-4 justify-content-center pb-4 flex-wrap">
+                <div class=" rounded d-flex flex-column justify-content-between " 
+                     style="background-color: #ffffff; color: #000000; width: 300px; min-height: 400px;">
+                  <h5 class="text-center  p-2 text-white" style="background-color: #598c8c;">Day 1: LiDAR & River Engineering</h5>
+                  <hr class="border-white">
+                  <p class="flex-grow-1 p-2" style="text-align: justify;">
+                    <strong>LiDAR Basics:</strong><br>
+                    Principles, System types (Airborne, Terrestrial, Mobile, Bathymetric), 
+                    data acquisition, and processing.
+                  </p>
+                  <p class="flex-grow-1 p-2" style="text-align: justify;">
+                    <strong>River Engineering:</strong><br>
+                    Fundamentals, challenges, and LiDAR applications for real-time solutions.
+                  </p>
+                </div>
+                <div class=" rounded d-flex flex-column justify-content-between" 
+                     style="background-color:  #ffffff; color: #000000; width: 300px; min-height: 400px;">
+                  <h5 class="text-center  p-2 text-white" style="background-color: #598c8c;">Day 2: LiDAR workflow & Integration</h5>
+                  <hr class="border-white">
+                  <p class="flex-grow-1 p-2" style="text-align: justify;">
+                    <strong>LiDAR Processing:</strong><br>
+                    Tools, point cloud filtering (ground/non-ground), and models (DTM, DSM, CHM).
+                  </p>
+                  <p class="flex-grow-1 p-2" style="text-align: justify;">
+                    <strong>Integration:</strong><br>
+                    LiDAR with drones, GIS, AI; use cases in hydrology, vegetation, infrastructure, 
+                    and climate monitoring.
+                  </p>
+                </div>
+              </div>
+              
+        </div>
+        
+          
+        
+    </div>
+    
+      
+    <footer>
+        <p><strong>© 2025 Amity University. All rights reserved</strong></p>
+    </footer>
+</body>
+<!-- JavaScript Imports -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</html>
