@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Dashboard</title>
+    <link rel="stylesheet" href="/user-management-system/stylesheets/administrator-dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <img src="/assets/images/mainLogo.png" alt="Logo">
+                <div class="user-info">
+                    <p>Administrator</p>
+                    <a href="#" class="logout-btn">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">Team Info</a></li>
+                    <li><a href="#">Submissions</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+
+            <!-- Role Content -->
+            <div class="role-content">
+                <h1>Administrator Dashboard</h1>
+                
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for team or submission..." onkeyup="searchFunction()">
+                </div>
+                
+                <!-- Leaderboard Section -->
+                <div class="section">
+                    <h2>Leaderboard</h2>
+                    <table id="leaderboard-table">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team Name</th>
+                            <th>Score</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Team A</td>
+                            <td>95</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Team B</td>
+                            <td>85</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Team C</td>
+                            <td>70</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <!-- Add more rows dynamically -->
+                    </table>
+                </div>
+                
+                <!-- Team Info Section -->
+                <div class="section">
+                    <h2>Team Information</h2>
+                    <div id="team-info">
+                        <!-- Team info will be dynamically added based on search or selection -->
+                    </div>
+                </div>
+                
+                <!-- Submission Section -->
+                <div class="section">
+                    <h2>Team Submissions</h2>
+                    <table id="submission-table">
+                        <tr>
+                            <th>Team Name</th>
+                            <th>Submission Date</th>
+                            <th>File</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Team A</td>
+                            <td>2025-01-20</td>
+                            <td><a href="#">Download</a></td>
+                            <td>Reviewed</td>
+                        </tr>
+                        <tr>
+                            <td>Team B</td>
+                            <td>2025-01-19</td>
+                            <td><a href="#">Download</a></td>
+                            <td>Pending</td>
+                        </tr>
+                        <!-- Add more submission rows dynamically -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/user-management-system/scripts/administrator.js"></script>
+</body>
+</html>

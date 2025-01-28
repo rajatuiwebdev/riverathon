@@ -1,0 +1,44 @@
+<!-- login-signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup - Riverathon</title>
+    <link rel="stylesheet" href="./stylesheets/login.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>Login Portal Riverathon</h2>
+
+            <!-- Role Selector -->
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="participant">Participant</option>
+                <option value="mentor">Mentor</option>
+                <option value="evaluator">Evaluator</option>
+                <option value="administrator">Administrator</option>
+            </select>
+
+            <!-- Login Form -->
+            <div class="form-content">
+                <form action="#" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <p id="auth-toggle">Don't have an account? <a href="#">Sign up here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
