@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Dashboard - Riverathon</title>
+    <link rel="stylesheet" href="stylesheets/participant-dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="header-content">
+                <img src="/assets/images/mainLogo.png" alt="Riverathon Logo" width="150px">
+                <div class="user-info">
+                    <p>Welcome, Participant</p>
+                    <a href="login.html" class="logout-btn">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="#user-dashboard">Dashboard</a></li>
+                    <li><a href="#user-info">Team Information</a></li>
+                    <li><a href="#leader-info">Leader Information</a></li>
+                    <li><a href="#file-upload">File Upload</a></li>
+                </ul>
+            </aside>
+
+            <section class="role-content">
+                <!-- User Dashboard Section -->
+                <div id="user-dashboard">
+                    <h1>Welcome to the Participant Dashboard</h1>
+                    <p>Here you can access important details regarding your team, the problem statement, the leader information, and upload relevant files for submission.</p>
+                </div>
+
+                <!-- User Problem Statement Section -->
+                <div id="user-problem-statement" class="section">
+                    <h2>Problem Statement</h2>
+                    <p>
+                        Your task is to work with your team to design and present a solution that addresses the given problem.
+                        The solution should be innovative, efficient, and feasible within the provided constraints.
+                    </p>
+                    <button class="action-btn">Download Full Problem Statement</button>
+                </div>
+
+                <!-- User Team Info Section -->
+                <div id="user-info" class="section">
+                    <h2>Your Team Information</h2>
+                    <p><strong>Team Name:</strong> Riverathon Innovators</p>
+                    <p><strong>Team Members:</strong> John Doe, Jane Smith, Alice Brown</p>
+                    <p><strong>Team Leader:</strong> John Doe</p>
+                    <button class="action-btn">View Team Details</button>
+                </div>
+
+                <!-- Leader Info Section -->
+                <div id="leader-info" class="section">
+                    <h2>Leader Information</h2>
+                    <p><strong>Team Leader Name:</strong> John Doe</p>
+                    <p><strong>Leader Contact:</strong> johndoe@example.com</p>
+                    <button class="action-btn">Contact Leader</button>
+                </div>
+
+                <!-- File Upload Section -->
+                <div id="file-upload" class="section">
+                    <h2>File Upload</h2>
+                    <p>Upload your presentations, reports, or any relevant documents for the competition.</p>
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="file-upload" class="file-input" required>
+                        <button type="submit" class="action-btn">Upload File</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

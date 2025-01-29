@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluator Dashboard</title>
+    <link rel="stylesheet" href="/user-management-system/stylesheets/evaluator-dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <img src="/assets/images/mainLogo.png" alt="Logo">
+                <div class="user-info">
+                    <p>Evaluator</p>
+                    <a href="#" class="logout-btn">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">Grading</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">View Saved File</a></li>
+                </ul>
+            </div>
+
+            <!-- Role Content -->
+            <div class="role-content">
+                <h1>Evaluator Dashboard</h1>
+                
+                <!-- File Upload Section -->
+                <!-- <div class="file-upload">
+                    <h2>Upload Team Data File</h2>
+                    <input type="file" id="file-input" accept=".json, .csv">
+                    <button onclick="uploadFile()">Upload</button>
+                </div> -->
+
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search for team..." onkeyup="searchFunction()">
+                </div>
+                
+                <!-- Editable Leaderboard -->
+                <div class="section">
+                    <h2>Editable Leaderboard</h2>
+                    <table id="leaderboard-table">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Team Name</th>
+                            <th>Score</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Team A</td>
+                            <td><input type="number" value="95" class="score-input"></td>
+                            <td><button class="save-btn" onclick="saveScore(this)">Save</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Team B</td>
+                            <td><input type="number" value="85" class="score-input"></td>
+                            <td><button class="save-btn" onclick="saveScore(this)">Save</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Team C</td>
+                            <td><input type="number" value="70" class="score-input"></td>
+                            <td><button class="save-btn" onclick="saveScore(this)">Save</button></td>
+                        </tr>
+                        <!-- More rows can be dynamically added -->
+                    </table>
+                </div>
+
+                <!-- Display Uploaded File Data -->
+                <div id="file-data" class="section" style="display:none;">
+                    <h2>Uploaded Team Data</h2>
+                    <table id="uploaded-table">
+                        <thead>
+                            <tr>
+                                <th>Team Name</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Content will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/user-management-system/scripts/evaluator.js"></script>
+</body>
+</html>
